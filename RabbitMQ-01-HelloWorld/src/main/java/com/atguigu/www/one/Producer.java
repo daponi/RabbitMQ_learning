@@ -1,4 +1,4 @@
-package com.atguigu.www.producer.one;
+package com.atguigu.www.one;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
