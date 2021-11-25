@@ -38,6 +38,11 @@ public class Worker04 {
             System.out.println("C2消费者取消消费接口回调逻辑:"+consumerTag);
         };
 
+        //设置不公平分发
+//        int prefetchCount =1 ;
+        //设立预取值
+        int prefetchCount =5 ;
+        channel.basicQos(prefetchCount);
         //处理完消息手动应答标识
         boolean autoAck=false;
 
